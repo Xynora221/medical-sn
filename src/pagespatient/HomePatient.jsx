@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function App() {
   return (
@@ -63,59 +64,58 @@ function App() {
           <ul className="nav nav-pills flex-column gap-2">
 
             <li className="nav-item">
-              <a className="nav-link active bg-white text-success" href="#">
+              <Link className="nav-link active bg-white text-success" to="/accueil">
                 <i className="bi bi-house-door-fill me-3"></i>
                 Accueil
-              </a>
+              </Link> {/* ici on a remplacer le lien a par un lien, responsive link pour rendre le bouton acceuil responsive*/}
             </li>
-
             <li>
-              <a className="nav-link text-white" href="#">
+              <Link className="nav-link text-white" to="/rendez-vous">
                 <i className="bi bi-calendar2-check-fill me-3"></i>
                 Rendez-vous
-              </a>
+              </Link>
             </li>
 
             <li>
-              <a className="nav-link text-white" href="#">
+              <Link className="nav-link text-white" to="/Téléconsultation">
                 <i className="bi bi-camera-video-fill me-3"></i>
                 Téléconsultation
-              </a>
+              </Link>
             </li>
 
             <li>
-              <a className="nav-link text-white" href="#">
+              <Link className="nav-link text-white" to="/Services de l'hôpital"> {/*pas d'espace entre le "/" et le nom*/}
                 <i className="bi bi-hospital-fill me-3"></i>
                 Services de l'hôpital
-              </a>
+              </Link>
             </li>
 
             <li>
-              <a className="nav-link text-white" href="#">
+              <Link className="nav-link text-white"to="/Mon dossier médical">
                 <i className="bi bi-file-earmark-medical-fill me-3"></i>
                 Mon dossier médical
-              </a>
+              </Link>
             </li>
 
             <li>
-              <a className="nav-link text-white" href="#">
+              <Link className="nav-link text-white" to="/Plan de l'hôpital">
                 <i className="bi bi-signpost-2-fill me-3"></i>
                 Plan de l'hôpital
-              </a>
+              </Link>
             </li>
 
             <li>
-              <a className="nav-link text-white" href="#">
+              <Link className="nav-link text-white" to="/Informations">
                 <i className="bi bi-info-circle-fill me-3"></i>
                 Informations
-              </a>
+              </Link>
             </li>
 
             <li>
-              <a className="nav-link text-white" href="#">
+              <Link className="nav-link text-white" to="/Paramètres">
                 <i className="bi bi-gear-fill me-3"></i>
                 Paramètres
-              </a>
+              </Link>
             </li>
 
           </ul>
@@ -163,20 +163,20 @@ function App() {
             <ul className="nav nav-pills flex-column gap-2 flex-grow-1">
 
               <li className="nav-item">
-                <a
-                  href="#"
+                <Link 
+                  to="/accueil"
                   className="nav-link active bg-white text-success"
                 >
                   <i className="bi bi-house-door-fill me-3"></i>
                   Accueil
-                </a>
-              </li>
+                </Link>
+              </li>   
 
               <li className="nav-item">
-                <a href="#" className="nav-link text-white">
+                <Link to="/rendez-vous" className="nav-link text-white">
                   <i className="bi bi-calendar2-check-fill me-3"></i>
                   Rendez-vous
-                </a>
+                </Link>
               </li>
 
               <li className="nav-item">
